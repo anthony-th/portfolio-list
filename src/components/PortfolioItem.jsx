@@ -8,10 +8,10 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
           <img
               src={imgUrl}
               alt="portfolio"
-              className="w-full h-36 md:h-48 object-cover group-hover:blur-sm group-hover:opacity-50 duration-500 group-hover:scale-125"
+              className="w-full h-36 md:h-48 object-cover group-hover:blur-sm group-hover:opacity-50 duration-500 group-hover:scale-125 group-hover:grayscale"
           />
           <div className="w-full rounded-md h-full duration-700 translate-y-[-100%] bg-transparent absolute z-10 top-0 flex group-hover:translate-y-[0%] group-hover:duration-700">
-                <div className="flex items-center flex-col absolute left-4 top-6 gap-4">
+                <div className="flex items-center flex-col absolute left-4 top-5 gap-4">
                     <a
                       href={projectUrl}
                       className="hover:opacity-75 hover:cursor-pointer"
