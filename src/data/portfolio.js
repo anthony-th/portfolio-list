@@ -21,6 +21,13 @@ export default [
     deployUrl: 'https://anthony-th.github.io/todo-list/',
   },
   {
+    title: 'Clean-code (Todo)',
+    imgUrl: '../src/assets/projects/10.webp',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    projectUrl: 'https://github.com/anthony-th/clean-code-s1e1/tree/clean-code-s1e1',
+    deployUrl: 'https://anthony-th.github.io/clean-code-s1e1/html/',    
+  },
+  {
     title: 'Shelter',
     imgUrl: '../src/assets/projects/4.webp',
     stack: ['HTML', 'CSS', 'JavaScript'],
