@@ -1,8 +1,15 @@
 export default [
   {
+    title: 'Book-shop',
+    imgUrl: '../src/assets/projects/11.webp',
+    stack: ['SCSS', 'JavaScript'],
+    projectUrl: 'https://github.com/anthony-th/book-shop/tree/book-shop',
+    deployUrl: 'https://anthony-th.github.io/book-shop/',
+  },
+  {
     title: 'Online-zoo',
     imgUrl: '../src/assets/projects/9.webp',
-    stack: ['HTML', 'CSS', 'JavaScript'],
+    stack: ['HTML', 'SCSS', 'JavaScript'],
     projectUrl: 'https://github.com/anthony-th/online-zoo',
     deployUrl: 'https://anthony-th.github.io/online-zoo/',
   },

@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Yesteryear";
+  src: url("./assets/fonts/Yesteryear-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vasek-Italic";
+  src: url("./assets/fonts/Vasek-Italic.ttf") format("truetype");
+}

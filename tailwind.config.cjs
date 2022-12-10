@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        yesteryear: ['Yesteryear', 'regular'],
+        vasek: ['Vasek-Italic', 'regular']
+      },
       screens: {
         dark: { raw: '(prefers-color-scheme: dark)' },
       },
