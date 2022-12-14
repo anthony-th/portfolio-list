@@ -76,4 +76,18 @@ export default [
     projectUrl: 'https://github.com/anthony-th/eco-sounds/tree/eco-sounds',
     deployUrl: 'https://anthony-th.github.io/eco-sounds/',
   },
+  {
+    title: 'CV',
+    imgUrl: './images/12.webp',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    projectUrl: 'https://github.com/anthony-th/cv/tree/develop',
+    deployUrl: 'https://anthony-th.github.io/cv/',
+  },
+  {
+    title: 'Simple CV',
+    imgUrl: './images/13.webp',
+    stack: ['HTML', 'CSS'],
+    projectUrl: 'https://github.com/anthony-th/rsschool-cv/tree/rsschool-cv-html',
+    deployUrl: 'https://anthony-th.github.io/rsschool-cv/',
+  },
 ];
