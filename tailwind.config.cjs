@@ -2,8 +2,8 @@
 module.exports = {
   darkMode: ['class', '[data-mode="dark"]'],
   content: [
-    './src/**/*.{html,jsx,js}',
     './index.html',
+    './src/**/*.{jsx, js}'
   ],
   theme: {
     extend: {
@@ -17,4 +17,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

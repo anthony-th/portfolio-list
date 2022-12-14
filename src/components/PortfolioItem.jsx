@@ -17,7 +17,7 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
                       className="hover:opacity-75 hover:cursor-pointer"
                     >
                       <img
-                        src="src/assets/coding.png"
+                        src="./images/coding.png"
                         alt=""
                         className="w-20 h-20 object-cover"
                       />
