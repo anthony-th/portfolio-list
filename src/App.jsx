@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/portfolio-list/' element={<Layout />}>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Homepage />} />
-          <Route path='/portfolio-list/about' element={<Aboutpage />} />
+          <Route path='about' element={<Aboutpage />} />
           <Route path='*' element={<Pagenotfound />} />
         </Route>
       </Routes>
