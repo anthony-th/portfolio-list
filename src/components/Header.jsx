@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+const setActive = ({isActive}) => isActive ? 'border-[#ee1f80] border-t-0 border-solid border px-2 rounded-b-md text-[#ee1f80]/90' : 'hover:text-[#ee1f80] border-t-0 border-solid border px-2 rounded-b-md';
 
 function Header() {
   return (
@@ -17,8 +19,8 @@ function Header() {
         <p className="text-sm max-w-xl mb-6 font-bold">
         </p>
         <div className="absolute w-full top-0 left-0 justify-between flex font-yesteryear opacity-90">
-          <Link className='hover:text-[#ee1f80] border-t-0 border-solid border px-2 rounded-b-md' to='/' title='Home'>Home</Link>
-          <Link className='hover:text-[#ee1f80] border-t-0 border-solid border px-2 rounded-b-md' to='/about' title='About me'>About</Link>
+          <NavLink className={setActive} to='/' title='Home'>Home</NavLink>
+          <NavLink className={setActive} to='/about' title='About me'>About</NavLink>
         </div>
       </div>
     </section>
