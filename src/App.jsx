@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/portfolio-list/' element={<Layout />}>
           <Route index element={<Homepage />} />
-          <Route path='about' element={<Aboutpage />} />
+          <Route path='/portfolio-list/about' element={<Aboutpage />} />
           <Route path='*' element={<Pagenotfound />} />
         </Route>
       </Routes>
