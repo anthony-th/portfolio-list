@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const setActive = ({isActive}) => isActive ? 'border-[#ee1f80] border-l-2 border-solid text-[#ee1f80]/90 pl-2 text-lg' : 'hover:text-[#ee1f80] border-l-2 border-[transparent] border-solid pl-2 select-none text-lg';
+const setActive = ({isActive}) => isActive ? 'border-[#ee1f80] border-l-2 border-solid text-[#ee1f80]/90 pl-2 text-lg select-none' : 'hover:text-[#ee1f80] border-l-2 border-[transparent] border-solid pl-2 select-none text-lg';
 
 function Header() {
   return (
