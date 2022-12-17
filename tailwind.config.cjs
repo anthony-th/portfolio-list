@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         yesteryear: ['Yesteryear', 'regular'],
-        vasek: ['Vasek-Italic', 'regular']
+        vasek: ['Vasek-Italic', 'regular'],
+        roboto: ['Roboto-regular', 'regular']
       },
       screens: {
         dark: { raw: '(prefers-color-scheme: dark)' },

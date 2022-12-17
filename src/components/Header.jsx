@@ -21,7 +21,7 @@ function Header() {
         </p>
         <div className="absolute w-full top-2 left-1 flex font-yesteryear gap-1 flex-col w-[50px]">
           <NavLink className={setActive} to='/portfolio-list/' title='Home'>Home</NavLink>
-          <NavLink className={setActive} to='/portfolio-list/about' title='About me'>About</NavLink>
+          <NavLink className={setActive} to='/portfolio-list/contact' title='Contact'>Contact</NavLink>
         </div>
       </div>
     </section>
