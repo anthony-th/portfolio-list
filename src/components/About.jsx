@@ -13,7 +13,7 @@ function About() {
         <button type='submit' className='rounded bg-[#ee1f80] text-xl py-1 px-4 hover:bg-[#ffffff] hover:text-[#ee1f80]'>Submit</button>
       </form>
       <a href='https://github.com/anthony-th' className=''>
-        <img className='w-[33px] h-[33px]' src={GithubImg} onMouseEnter={e => {e.target.src = GithubImgHover}} onMouseLeave={e => {e.target.src = GithubImg}} />
+        <img className='w-[33px] h-[33px]' src={GithubImg} onMouseEnter={e => {e.target.src = GithubImgHover}} onMouseLeave={e => {e.target.src = GithubImg}} alt="github page"/>
       </a>
     </div>
   )
