@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GithubImg from "/images/github.png";
 import GithubImgHover from "/images/github-hover.png";
 
 function About() {
+  const [isHover, setIsHover] = useState(false);
   return (
     <div className="flex flex-col md:flex-col items-center justify-between text-6xl pt-8">
       <form action='https://getform.io/f/7a51d866-1164-4a86-b40f-678f01bcfcdd' method='POST' className='flex flex-col gap-3 items-center mb-8'>

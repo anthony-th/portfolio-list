@@ -19,7 +19,7 @@ function Header() {
         <p className="text-[#ee1f80] font-vasek absolute text-4xl max-w-xl font-bold top-[39px] right-[13px] rotate-[-15deg] select-none">
           Portfolio
         </p>
-        <div className="absolute w-full top-2 left-1 flex font-yesteryear gap-1 flex-col w-[50px]">
+        <div className="absolute w-full top-2 left-1 flex font-yesteryear gap-1 flex-col items-start">
           <NavLink className={setActive} to='/' title='Home'>Home</NavLink>
           <NavLink className={setActive} to='contact' title='Contact'>Contact</NavLink>
         </div>
