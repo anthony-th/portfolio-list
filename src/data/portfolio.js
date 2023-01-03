@@ -1,5 +1,12 @@
 export default [
   {
+    title: 'Sports landing',
+    imgUrl: './images/14.webp',
+    stack: ['TypeScript', 'React', 'Tailwind'],
+    projectUrl: 'https://github.com/anthony-th/sports/tree/develop',
+    deployUrl: 'https://sports-th.vercel.app/',
+  },
+  {
     title: 'Book-shop',
     imgUrl: './images/11.webp',
     stack: ['SCSS', 'JavaScript'],
