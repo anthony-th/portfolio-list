@@ -1,9 +1,19 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
+  const cardsItem = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+
   return (
-        <div
+        <motion.div
             className="group border border-white rounded-md overflow-hidden relative hover:border-stone-300"
+            variants={cardsItem}
         >
           <img
               src={imgUrl}
@@ -45,7 +55,7 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
                   </p>
                 </div>
           </div>     
-        </div>
+        </motion.div>
   );
 }
 
