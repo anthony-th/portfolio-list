@@ -20,7 +20,7 @@
   scrollbar-color: #EE1F80 #27272A;
 }
 *::-webkit-scrollbar {
-	width: 7px;
+	width: 10px;
 	background-color: rgb(39 39 42);
 }
 *::-webkit-scrollbar-track {
@@ -32,7 +32,7 @@
   background-color: #27272A;
 }
 *::-webkit-scrollbar-thumb {
-  border-radius: 7px;
+  border-radius: 10px;
 	background-color: #ee1f80;
 }
 *::-webkit-scrollbar-thumb:hover {
