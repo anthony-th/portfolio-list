@@ -1,21 +1,10 @@
 import React from 'react';
 import portfolio from '../data/portfolio';
+import { cardsContainer } from '../shared/types';
 import PortfolioItem from './PortfolioItem';
 import { motion } from 'framer-motion';
 
 function Portfolio() {
-  const cardsContainer = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
-
   return (
     <div className="flex flex-col md:flex-row items-center justify-center">
       <motion.div
