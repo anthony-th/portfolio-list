@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import portfolio from '../data/portfolio';
-import { cardsContainer } from '../shared/types';
+import { cardsContainer, cardsItem } from '../shared/types';
 import PortfolioItem from './PortfolioItem';
 import { motion } from 'framer-motion';
 
 function Portfolio() {
+  const itemsPerPage = 9;
+  const [currentPage, setCurrentPage] = useState(parseInt(localStorage.getItem('activePage')) || 1);
+
+  const totalPages = Math.ceil(portfolio.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentItems = portfolio.slice(startIndex, endIndex);
+
+  useEffect(() => {
+    localStorage.setItem('activePage', currentPage);
+  }, [currentPage]);
+
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center">
+    <div className='flex flex-col gap-4 items-center justify-center'>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'
         variants={cardsContainer}
-        initial="hidden"
-        animate="visible"
+        initial='hidden'
+        animate='visible'
       >
-          {portfolio.map(project => (
+          {currentItems.map(project => (
               <PortfolioItem
                   key={project.title}
                   imgUrl={project.imgUrl}
@@ -23,6 +35,20 @@ function Portfolio() {
                   deployUrl={project.deployUrl}
               />
           ))}
+      </motion.div>
+      <motion.div
+        className="flex justify-center items-center font-yesteryear text-lg"
+        variants={cardsItem}
+        initial='hidden'
+        animate='visible'
+      >
+        <button className={`border-[#ee1f80] mr-2 border border-r-0 px-2 py-1 rounded-l ${currentPage === 1 ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>Previous</button>
+        {Array.from({length: totalPages}, (_, i) => i + 1).map(pageNum => (
+          <button key={pageNum} className={`px-1 py-1 ${currentPage === pageNum ? 'text-[#ee1f80] border-[#ee1f80] cursor-default' : 'text-gray-300 hover:text-[#ee1f80] hover:border-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(pageNum)}>
+            {pageNum}
+          </button>
+        ))}
+        <button className={`border-[#ee1f80] ml-2 border border-l-0 px-2 py-1 rounded-r ${currentPage === totalPages ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>Next</button>
       </motion.div>
     </div>
   );

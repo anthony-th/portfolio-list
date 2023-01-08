@@ -19,3 +19,8 @@ export const cardsItem = {
     }
   }
 };
+export const textFadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 1 },
+};

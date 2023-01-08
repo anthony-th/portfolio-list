@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { cardsContainer } from '../shared/types';
 import { cardsItem } from '../shared/types';
-import GithubImg from "/images/github.png";
-import GithubImgHover from "/images/github-hover.png";
+import GithubImg from '/images/github.png';
+import GithubImgHover from '/images/github-hover.png';
+import TelegramImg from '/images/telegram.png';
+import TelegramImgHover from '/images/telegram-hover.png';
 import { motion } from 'framer-motion';
 
 function About() {
-  const [isHover, setIsHover] = useState(false);
+  const [isHoverGit, setIsHoverGit] = useState(false);
+  const [isHoverTelegram, setIsHoverTelegram] = useState(false);
   return (
     <motion.div
-      className="flex flex-col md:flex-col items-center justify-between text-6xl pt-8"
+      className='flex flex-col md:flex-col items-center justify-between text-6xl pt-8'
       variants={cardsContainer}
-      animate="visible"
-      initial="hidden"
+      animate='visible'
+      initial='hidden'
     >
       <form action='https://getform.io/f/7a51d866-1164-4a86-b40f-678f01bcfcdd' method='POST' className='flex flex-col gap-3 items-center mb-8'>
         <motion.h2
@@ -39,9 +42,9 @@ function About() {
         />
         <motion.textarea
           variants={cardsItem}
-          name="message"
+          name='message'
           placeholder='message'
-          rows="4"
+          rows='4'
           className='rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1 mb-2'
           required
         />
@@ -53,9 +56,31 @@ function About() {
           Submit
         </motion.button>
       </form>
-      <motion.a href='https://github.com/anthony-th' variants={cardsItem}>
-        <img className='w-[33px] h-[33px]' src={isHover ? GithubImgHover : GithubImg} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} alt="github page" title='github page' />
-      </motion.a>
+      <motion.div
+        variants={cardsItem}
+        className='flex gap-1'
+      >
+        <a href='https://github.com/anthony-th'>
+          <img
+            className='w-[33px] h-[33px]'
+            src={isHoverGit ? GithubImgHover : GithubImg}
+            onMouseEnter={() => setIsHoverGit(true)}
+            onMouseLeave={() => setIsHoverGit(false)}
+            alt='github page'
+            title='github page'
+          />
+        </a>
+        <a href='https://t.me/sfm_frontend'>
+          <img
+            className='w-[33px] h-[33px]'
+            src={isHoverTelegram ? TelegramImgHover : TelegramImg}
+            onMouseEnter={() => setIsHoverTelegram(true)}
+            onMouseLeave={() => setIsHoverTelegram(false)}
+            alt='telegram link'
+            title='telegram link'
+          />
+        </a>
+      </motion.div>
     </motion.div>
   )
 }
