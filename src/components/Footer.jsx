@@ -9,7 +9,7 @@ function Footer() {
         {...textFadeIn}
         className='text-sm mt-2 opacity-50 font-yesteryear'
       >
-        &copy; 2022 Anthony-th. All rights reserved.
+        &copy; 2022 <a className='hover:text-[#ee1f80] transition-all' href="https://github.com/anthony-th">Anthony-th</a>. All rights reserved.
       </motion.p>
     </div>
   )
