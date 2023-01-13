@@ -33,9 +33,9 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
                 </a>
             </div>
             <div className='w-full p-3 pt-1 absolute bottom-0'>
-              <h3 className='md:text-2xl text-lg mb-2 font-semibold flex justify-end select-none'>
+              <h2 className='md:text-2xl text-lg mb-2 font-semibold flex justify-end select-none'>
                   {title} 
-              </h3>
+              </h2>
               <p className='flex flex-wrap gap-2 flex-row items-center text-white justify-end text-xs'>
                 {stack.map(item => (
                     <span
