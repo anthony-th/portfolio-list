@@ -23,7 +23,7 @@ function Header() {
         </motion.h1>
         <motion.p
           {...textFadeIn}
-          className='font-yesteryear text-xl md:text-x1 mb-3 font-medium border-[#ee1f80] border-b-2 border-solid'
+          className='font-yesteryear text-xl md:text-x1 mb-4 font-medium border-[#ee1f80] border-b-2 border-solid'
         >
           Software Engineer & Front-end Developer{' '}
         </motion.p>
