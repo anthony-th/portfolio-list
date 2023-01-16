@@ -18,6 +18,7 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
                 <a
                   href={projectUrl}
                   className='hover:opacity-75 hover:cursor-pointer'
+                  alt='source code'
                 >
                   <img
                     src='./images/coding.png'
@@ -28,6 +29,7 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
                 <a
                   href={deployUrl}
                   className='px-3 py-1 hover:opacity-75 uppercase bg-red-500 rounded-md z-20 hover:shadow-lg hover:cursor-pointer'
+                  alt='view project'
                 >
                   view
                 </a>
