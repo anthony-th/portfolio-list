@@ -43,8 +43,12 @@ function Portfolio() {
         animate='visible'
       >
         <button className={`border-[#ee1f80] border border-r-0 px-4 py-1 rounded-l ${currentPage === 1 ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>Previous</button>
-        {Array.from({length: totalPages}, (_, i) => i + 1).map(pageNum => (
-          <button key={pageNum} className={`px-2 py-1 ${currentPage === pageNum ? 'text-[#ee1f80] border-[#ee1f80] cursor-default' : 'text-gray-300 hover:text-[#ee1f80] hover:border-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(pageNum)}>
+        {Array.from({length: totalPages}, (_, i) => i + 1).map((pageNum, index) => (
+          <button 
+            key={pageNum} 
+            className={`px-2 py-1 ${currentPage === pageNum ? 'text-[#ee1f80] border-[#ee1f80] cursor-default' : 'text-gray-300 hover:text-[#ee1f80] hover:border-[#ee1f80] transition-colors'} 
+            ${index === 0 ? 'pl-4' : ''} ${index === totalPages - 1 ? 'pr-4' : ''}`} 
+            onClick={() => setCurrentPage(pageNum)}>
             {pageNum}
           </button>
         ))}
