@@ -42,7 +42,7 @@ function PortfolioItem({ imgUrl, title, stack, deployUrl, projectUrl }) {
                 {stack.map(item => (
                     <span
                         key={item} 
-                        className='inline-block px-1.5 leading-4 font-semibold border border-white rounded-md text-xs md:text-sm py-1 select-none'
+                        className='inline-block px-1.5 leading-4 font-semibold border border-white rounded-md text-xs md:text-sm py-1 select-none bg-[#292929]/30'
                     >
                         {item}
                     </span>
