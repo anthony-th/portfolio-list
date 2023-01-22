@@ -70,7 +70,7 @@ function About() {
             title='github page'
           />
         </a>
-        <a href='https://t.me/sfm_frontend'>
+        <a href='https://t.me/im_printcode'>
           <img
             className='w-[33px] h-[33px]'
             src={isHoverTelegram ? TelegramImgHover : TelegramImg}
