@@ -37,7 +37,7 @@ function Header() {
           {...textFadeIn}
           className='absolute w-full top-2 left-1 flex font-yesteryear gap-1 flex-col items-start'
         >
-          <NavLink className={setActive} to='/' title='Home'>Home</NavLink>
+          <NavLink className={setActive} to='/' title='Portfolio'>Portfolio</NavLink>
           <NavLink className={setActive} to='/contact' title='Contact'>Contact</NavLink>
         </motion.div>
       </div>
