@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class', '[data-mode="dark"]'],
   content: [
     './index.html',
     './src/**/*.{jsx, js}'
@@ -12,8 +11,9 @@ module.exports = {
         vasek: ['Vasek-Italic', 'regular'],
         roboto: ['Roboto-regular', 'regular']
       },
-      screens: {
-        dark: { raw: '(prefers-color-scheme: dark)' },
+      letterSpacing: {
+        tightest: '-.075em',
+        tighter: '-.05em',
       },
     },
   },
