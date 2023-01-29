@@ -60,7 +60,11 @@ function About() {
         variants={cardsItem}
         className='flex gap-1'
       >
-        <a href='https://github.com/anthony-th'>
+        <a 
+          href='https://github.com/anthony-th'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className='w-[33px] h-[33px]'
             src={isHoverGit ? GithubImgHover : GithubImg}
@@ -70,7 +74,11 @@ function About() {
             title='github page'
           />
         </a>
-        <a href='https://t.me/im_printcode'>
+        <a 
+          href='https://t.me/im_printcode'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className='w-[33px] h-[33px]'
             src={isHoverTelegram ? TelegramImgHover : TelegramImg}
