@@ -38,21 +38,22 @@ function Portfolio() {
       </motion.div>
       <motion.div
         className="flex justify-center items-center font-yesteryear text-xl"
-        variants={cardsItem}
+        variants={cardsContainer}
         initial='hidden'
         animate='visible'
       >
-        <button className={`border-[#ee1f80] border border-r-0 px-4 py-1 rounded-l ${currentPage === 1 ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>Previous</button>
+        <motion.button className={`border-[#ee1f80] border border-r-0 px-4 py-1 rounded-l ${currentPage === 1 ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1} variants={cardsItem}>Previous</motion.button>
         {Array.from({length: totalPages}, (_, i) => i + 1).map((pageNum, index) => (
-          <button 
+          <motion.button 
+            variants={cardsItem}
             key={pageNum} 
             className={`px-2 py-1 ${currentPage === pageNum ? 'text-[#ee1f80] border-[#ee1f80] cursor-default' : 'text-gray-300 hover:text-[#ee1f80] hover:border-[#ee1f80] transition-colors'} 
             ${index === 0 ? 'pl-4' : ''} ${index === totalPages - 1 ? 'pr-4' : ''}`} 
             onClick={() => setCurrentPage(pageNum)}>
             {pageNum}
-          </button>
+          </motion.button>
         ))}
-        <button className={`border-[#ee1f80] border border-l-0 px-4 py-1 rounded-r ${currentPage === totalPages ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>Next</button>
+        <motion.button className={`border-[#ee1f80] border border-l-0 px-4 py-1 rounded-r ${currentPage === totalPages ? 'text-gray-700 border-gray-700' : 'text-gray-300 hover:text-[#ee1f80] transition-colors'}`} onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages} variants={cardsItem}>Next</motion.button>
       </motion.div>
     </div>
   );
