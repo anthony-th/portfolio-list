@@ -20,7 +20,7 @@ function Portfolio() {
   return (
     <div className='w-fit flex flex-col gap-4 items-center justify-center'>
       <AnimatePresence>
-        <motion.custom
+        <motion.div
           key={currentPage}
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'
           variants={cardsContainer}
@@ -38,7 +38,7 @@ function Portfolio() {
                     deployUrl={project.deployUrl}
                 />
             ))}
-        </motion.custom>
+        </motion.div>
         <motion.div
           className="flex justify-center items-center font-yesteryear text-xl"
           variants={cardsContainer}
