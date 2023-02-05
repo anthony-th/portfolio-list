@@ -51,7 +51,7 @@ function About() {
         <motion.button
           variants={cardsItem}
           type='submit'
-          className='font-yesteryear rounded bg-[#ee1f80] text-2xl py-1 pb-[0.07rem] px-4 hover:bg-[#ffffff] hover:text-[#ee1f80]'
+          className='font-yesteryear rounded bg-[#ee1f80] text-2xl py-1 pb-[0.07rem] px-4 hover:bg-[#ffffff] hover:text-[#ee1f80] transition-colors duration-500'
         >
           Submit
         </motion.button>
