@@ -17,7 +17,7 @@
           animate={{ y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >Hello! I'm&nbsp;
-          <motion.span className='text-[#ee1f80]'>Anthony</motion.span>.<br />
+          <span className='text-[#ee1f80]'>Anthony</span>.<br />
           I'm a front-end web developer.
         </motion.h1>
         <motion.div className="flex gap-4"
@@ -29,7 +29,7 @@
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className='font-raleway hover:rounded-lg border border-[#ee1f80] px-3 py-1 rounded-sm hover:bg-[#ee1f80] transition-all duration-500'
+              className='font-raleway hover:rounded-lg border border-[#ee1f80] px-3 py-1 rounded-sm hover:bg-[#ee1f80] transition-all duration-500 w-[90px]'
             >
               Portfolio
             </motion.button>
