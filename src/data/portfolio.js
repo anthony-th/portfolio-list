@@ -21,6 +21,13 @@ export default [
     deployUrl: 'https://anthony-th.github.io/online-zoo/',
   },
   {
+    title: 'Weather',
+    imgUrl: './images/15.webp',
+    stack: ['React', 'Tailwind', 'Rest API'],
+    projectUrl: 'https://github.com/anthony-th/weather-app/tree/develop',
+    deployUrl: 'https://anthony-th.github.io/weather-app/',
+  },
+  {
     title: 'Online store',
     imgUrl: './images/7.webp',
     stack: ['React', 'CSS', 'JavaScript'],
