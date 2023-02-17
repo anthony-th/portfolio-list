@@ -32,7 +32,7 @@ export default [
     imgUrl: './images/7.webp',
     stack: ['React', 'CSS', 'JavaScript'],
     projectUrl: 'https://github.com/anthony-th/online-store/tree/develop',
-    deployUrl: 'https://e-com-sites.netlify.app/',
+    deployUrl: 'https://anthony-th.github.io/online-store/',
   },
   {
     title: 'Todo',
