@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{jsx, js}'
-  ],
+  content: ["./src/**/*.{html,js,jsx,tsx,ts}"],
   theme: {
     extend: {
       fontFamily: {

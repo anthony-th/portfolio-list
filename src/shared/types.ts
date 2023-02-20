@@ -4,9 +4,9 @@ export const cardsContainer = {
     opacity: 1,
     transition: {
       delayChildren: 0.3,
-      staggerChildren: 0.2
-    }
-  }
+      staggerChildren: 0.2,
+    },
+  },
 };
 export const cardsItem = {
   hidden: { y: 20, opacity: 0 },
@@ -15,9 +15,9 @@ export const cardsItem = {
     opacity: 1,
     transition: {
       delayChildren: 0.3,
-      staggerChildren: 0.2
-    }
-  }
+      staggerChildren: 0.2,
+    },
+  },
 };
 export const textFadeIn = {
   initial: { opacity: 0 },
