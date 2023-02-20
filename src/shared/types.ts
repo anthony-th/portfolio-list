@@ -24,3 +24,11 @@ export const textFadeIn = {
   animate: { opacity: 1 },
   transition: { duration: 1 },
 };
+
+export interface PortfolioItemProps {
+  imgUrl: string;
+  title: string;
+  stack: string[];
+  deployUrl: string;
+  projectUrl: string;
+}

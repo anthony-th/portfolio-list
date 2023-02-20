@@ -2,14 +2,7 @@ import React from "react";
 import { cardsItem } from "../shared/types";
 import { motion } from "framer-motion";
 import CodingImg from "../assets/images/coding.png";
-
-interface PortfolioItemProps {
-  imgUrl: string;
-  title: string;
-  stack: string[];
-  deployUrl: string;
-  projectUrl: string;
-}
+import { PortfolioItemProps } from "../shared/types";
 
 function PortfolioItem({
   imgUrl,
