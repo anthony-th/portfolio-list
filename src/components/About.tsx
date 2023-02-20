@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import { cardsContainer } from "../shared/types";
-import { cardsItem } from "../shared/types";
+import { motion } from "framer-motion";
+import { cardsContainer, cardsItem } from "../shared/types";
 import GithubImg from "../assets/images/github.png";
 import GithubImgHover from "../assets/images/github-hover.png";
 import TelegramImg from "../assets/images/telegram.png";
 import TelegramImgHover from "../assets/images/telegram-hover.png";
-import { motion } from "framer-motion";
+import { RiSendPlaneFill } from "react-icons/ri";
+import ResumeButtonAbout from "./ResumeButtonAbout";
 
 function About() {
   const [isHoverGit, setIsHoverGit] = useState<boolean>(false);
   const [isHoverTelegram, setIsHoverTelegram] = useState<boolean>(false);
   return (
     <motion.div
-      className={"flex flex-col md:flex-col items-center justify-between text-6xl pt-8"}
+      className={
+        "flex flex-col items-center justify-between text-6xl pt-6 gap-2"
+      }
       variants={cardsContainer}
       animate={"visible"}
       initial={"hidden"}
@@ -33,7 +36,9 @@ function About() {
           type={"text"}
           name={"name"}
           placeholder={"name"}
-          className={"rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1"}
+          className={
+            "rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1"
+          }
           required
         />
         <motion.input
@@ -41,7 +46,9 @@ function About() {
           type={"text"}
           name={"email"}
           placeholder={"email"}
-          className={"rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1"}
+          className={
+            "rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1"
+          }
           required
         />
         <motion.textarea
@@ -49,16 +56,27 @@ function About() {
           name={"message"}
           placeholder={"message"}
           rows={4}
-          className={"rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1 mb-2"}
+          className={
+            "rounded bg-transparent border-solid border px-2 focus:border-[#ee1f80] focus:outline-none text-base min-w-[300px] font-roboto py-1"
+          }
           required
         />
-        <motion.button
+        <motion.div
           variants={cardsItem}
-          type={"submit"}
-          className={"font-yesteryear rounded bg-[#ee1f80] text-2xl py-1 pb-[0.07rem] px-4 hover:bg-[#ffffff] hover:text-[#ee1f80] transition-colors duration-500"}
+          className={"min-w-[300px] flex justify-between"}
         >
-          Submit
-        </motion.button>
+          <button
+            type={"submit"}
+            className={
+              "font-yesteryear bg-transparent text-2xl py-0 px-2 hover:bg-[#ffffff] hover:text-[#292929] transition-colors duration-500  rounded border hover:border-white min-w-[116px] min-h-[36px] pt-[0.07em] relative bottom-3 border-t-0 flex items-center justify-center"
+            }
+          >
+            <span className={"text-[#ee1f80] hover:text-[#292929]"}>S</span>
+            ubmit
+            <RiSendPlaneFill className={"ml-2"} />
+          </button>
+          <ResumeButtonAbout />
+        </motion.div>
       </form>
       <motion.div variants={cardsItem} className={"flex gap-1"}>
         <a
