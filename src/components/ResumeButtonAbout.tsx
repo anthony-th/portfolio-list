@@ -11,7 +11,7 @@ function ResumeButtonAbout() {
       target={"_blank"}
       rel={"noopener noreferrer"}
     >
-      <h2 className={"flex items-center justify-center w-full tracking-wide group-hover:text-[#292929]"}>
+      <h2 className={"flex items-center justify-center w-full tracking-wide group-hover:text-[#292929] animate-pulse group-hover:animate-none"}>
         <span className={"text-[#ee1f80] group-hover:text-[#292929]"}>R</span>esume
         <AiOutlineDownload className={"ml-2"} />
       </h2>
