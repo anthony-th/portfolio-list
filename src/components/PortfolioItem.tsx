@@ -1,7 +1,7 @@
 import React from "react";
-import { cardsItem } from "../shared/types";
 import { motion } from "framer-motion";
 import CodingImg from "../assets/images/coding.png";
+import { cardsItem } from "../shared/types";
 import { PortfolioItemProps } from "../shared/types";
 
 function PortfolioItem({

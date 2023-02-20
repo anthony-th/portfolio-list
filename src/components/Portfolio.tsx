@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import portfolio from "../data/portfolio";
-import { cardsContainer, cardsItem } from "../shared/types";
-import PortfolioItem from "./PortfolioItem";
 import { motion, AnimatePresence } from "framer-motion";
+import portfolio from "../data/portfolio";
+import PortfolioItem from "./PortfolioItem";
+import { cardsContainer, cardsItem } from "../shared/types";
 
 function Portfolio() {
   const itemsPerPage = 9;
