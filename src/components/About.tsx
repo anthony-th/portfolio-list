@@ -5,7 +5,7 @@ import GithubImg from "../assets/images/github.png";
 import GithubImgHover from "../assets/images/github-hover.png";
 import TelegramImg from "../assets/images/telegram.png";
 import TelegramImgHover from "../assets/images/telegram-hover.png";
-import { RiSendPlaneFill } from "react-icons/ri";
+import { MdSend } from "react-icons/md";
 import ResumeButtonAbout from "./ResumeButtonAbout";
 
 function About() {
@@ -68,12 +68,12 @@ function About() {
           <button
             type={"submit"}
             className={
-              "font-yesteryear bg-transparent text-2xl py-0 px-2 hover:bg-[#ffffff] hover:text-[#292929] transition-colors duration-500  rounded border hover:border-white min-w-[116px] min-h-[36px] pt-[0.07em] relative bottom-3 border-t-0 flex items-center justify-center"
+              "font-yesteryear bg-transparent text-2xl py-0 px-2 hover:bg-[#ffffff] group hover:text-[#292929] transition-colors duration-500  rounded border hover:border-white min-w-[116px] min-h-[36px] pt-[0.07em] relative bottom-3 border-t-0 flex items-center justify-center"
             }
           >
-            <span className={"text-[#ee1f80] hover:text-[#292929]"}>S</span>
+            <span className={"text-[#ee1f80] group-hover:text-[#292929]"}>S</span>
             ubmit
-            <RiSendPlaneFill className={"ml-2"} />
+            <MdSend className={"ml-2"} />
           </button>
           <ResumeButtonAbout />
         </motion.div>
