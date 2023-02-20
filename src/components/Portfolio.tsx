@@ -20,14 +20,14 @@ function Portfolio() {
   }, [currentPage, currentItems]);
 
   return (
-    <div className="w-fit flex flex-col gap-4 items-center justify-center">
+    <div className={"w-fit flex flex-col gap-4 items-center justify-center"}>
       <AnimatePresence>
         <motion.div
           key={currentPage}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+          className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"}
           variants={cardsContainer}
-          initial="hidden"
-          animate="visible"
+          initial={"hidden"}
+          animate={"visible"}
           exit={{ opacity: 0 }}
         >
           {currentItems.map((project) => (
@@ -42,10 +42,10 @@ function Portfolio() {
           ))}
         </motion.div>
         <motion.div
-          className="flex justify-center items-center font-yesteryear text-xl"
+          className={"flex justify-center items-center font-yesteryear text-xl"}
           variants={cardsContainer}
-          initial="hidden"
-          animate="visible"
+          initial={"hidden"}
+          animate={"visible"}
         >
           <motion.button
             className={`border-[#ee1f80] border border-r-0 px-4 py-1 rounded-l ${
