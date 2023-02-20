@@ -10,14 +10,14 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/portfolio" element={<Layout />}>
+        <Route path={"/"} element={<Homepage />} />
+        <Route path={"/portfolio"} element={<Layout />}>
           <Route index element={<Portfoliopage />} />
         </Route>
-        <Route path="/contact" element={<Layout />}>
+        <Route path={"/contact"} element={<Layout />}>
           <Route index element={<Aboutpage />} />
         </Route>
-        <Route path="*" element={<Pagenotfound />} />
+        <Route path={"*"} element={<Pagenotfound />} />
       </Routes>
     </>
   );
