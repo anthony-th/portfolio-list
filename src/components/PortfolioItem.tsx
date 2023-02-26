@@ -26,7 +26,7 @@ function PortfolioItem({
         {loading && (
           <div
             className={
-              "absolute z-20 w-full h-full flex items-center justify-center bg-black/50"
+              "absolute z-20 w-full h-full flex items-center justify-center bg-zinc-900"
             }
           >
             <span className={"text-white font-bold text-xl"}>Loading...</span>
