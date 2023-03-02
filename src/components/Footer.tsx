@@ -7,7 +7,7 @@ function Footer() {
     <div className={"py-5 text-center"}>
       <motion.p
         {...textFadeIn}
-        className={"text-sm mt-2 opacity-50 font-yesteryear"}
+        className={"text-sm mt-2 font-yesteryear text-white/50"}
       >
         &copy; 2022{" "}
         <a
