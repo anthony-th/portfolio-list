@@ -32,3 +32,7 @@ export interface PortfolioItemProps {
   deployUrl: string;
   projectUrl: string;
 }
+
+export const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  event.preventDefault();
+};
