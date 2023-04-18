@@ -52,7 +52,7 @@ export default [
   {
     title: "Shelter",
     imgUrl: "./images/4.webp",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["WebPack", "SCSS", "JavaScript"],
     projectUrl: "https://github.com/anthony-th/shelter/tree/shelter-part3",
     deployUrl: "https://anthony-th.github.io/shelter/",
   },
