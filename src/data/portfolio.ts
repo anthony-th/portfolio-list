@@ -53,8 +53,8 @@ export default [
     title: "Shelter",
     imgUrl: "./images/4.webp",
     stack: ["HTML", "CSS", "JavaScript"],
-    projectUrl: "https://github.com/anthony-th/shelter/tree/shelter",
-    deployUrl: "https://anthony-th.github.io/shelter/pages/main/",
+    projectUrl: "https://github.com/anthony-th/shelter/tree/shelter-part3",
+    deployUrl: "https://anthony-th.github.io/shelter/",
   },
   {
     title: "CSS Slider",
