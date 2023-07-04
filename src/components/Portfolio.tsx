@@ -24,7 +24,7 @@ function Portfolio() {
       <AnimatePresence>
         <motion.div
           key={currentPage}
-          className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"}
+          className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-3"}
           variants={cardsContainer}
           initial={"hidden"}
           animate={"visible"}
