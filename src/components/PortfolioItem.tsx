@@ -54,7 +54,7 @@ function PortfolioItem({
       >
         <div
           className={
-            "flex items-center flex-col absolute md:left-4 md:top-5 md:gap-4 left-3 top-2 gap-2"
+            "flex items-center flex-col absolute md:left-5 md:top-5 md:gap-4 left-3 top-4 gap-2"
           }
         >
           <a
