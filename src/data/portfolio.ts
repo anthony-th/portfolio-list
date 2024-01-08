@@ -47,14 +47,14 @@ export default [
     stack: ["HTML", "CSS", "JavaScript"],
     projectUrl:
       "https://github.com/anthony-th/clean-code-s1e1/tree/clean-code-s1e1",
-    deployUrl: "https://anthony-th.github.io/clean-code-s1e1/html/",
+    deployUrl: "https://anthony-th.github.io/clean-code-s1e1/",
   },
   {
     title: "Shelter",
     imgUrl: "./images/4.webp",
-    stack: ["HTML", "CSS", "JavaScript"],
-    projectUrl: "https://github.com/anthony-th/shelter/tree/shelter",
-    deployUrl: "https://anthony-th.github.io/shelter/pages/main/",
+    stack: ["WebPack", "SCSS", "JavaScript"],
+    projectUrl: "https://github.com/anthony-th/shelter/tree/shelter-part3",
+    deployUrl: "https://anthony-th.github.io/shelter/",
   },
   {
     title: "CSS Slider",

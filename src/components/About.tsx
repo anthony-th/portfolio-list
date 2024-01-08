@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { cardsContainer, cardsItem } from "../shared/types";
-import GithubImg from "../assets/images/github.png";
-import GithubImgHover from "../assets/images/github-hover.png";
-import TelegramImg from "../assets/images/telegram.png";
-import TelegramImgHover from "../assets/images/telegram-hover.png";
 import { MdSend } from "react-icons/md";
+import { BsTelegram, BsGithub } from "react-icons/bs";
 import ResumeButtonAbout from "./ResumeButtonAbout";
 
 function About() {
-  const [isHoverGit, setIsHoverGit] = useState<boolean>(false);
-  const [isHoverTelegram, setIsHoverTelegram] = useState<boolean>(false);
   return (
     <motion.div
       className={
@@ -71,25 +66,23 @@ function About() {
               "font-yesteryear bg-transparent text-2xl py-0 px-2 hover:bg-[#ffffff] group hover:text-[#292929] transition-colors duration-500  rounded border hover:border-white min-w-[116px] min-h-[36px] pt-[0.07em] relative bottom-3 border-t-0 flex items-center justify-center"
             }
           >
-            <span className={"text-[#ee1f80] group-hover:text-[#292929]"}>S</span>
+            <span className={"text-[#ee1f80] group-hover:text-[#292929]"}>
+              S
+            </span>
             ubmit
             <MdSend className={"ml-2"} />
           </button>
           <ResumeButtonAbout />
         </motion.div>
       </form>
-      <motion.div variants={cardsItem} className={"flex gap-1"}>
+      <motion.div variants={cardsItem} className={"flex gap-2"}>
         <a
           href={"https://github.com/anthony-th"}
           target={"_blank"}
           rel={"noopener noreferrer"}
         >
-          <img
-            className={"w-[33px] h-[33px]"}
-            src={isHoverGit ? GithubImgHover : GithubImg}
-            onMouseEnter={() => setIsHoverGit(true)}
-            onMouseLeave={() => setIsHoverGit(false)}
-            alt={"github page"}
+          <BsGithub
+            className={"text-black hover:text-[#ee1f80] w-[28px] h-[28px] transition-colors duration-500"}
             title={"github page"}
           />
         </a>
@@ -98,12 +91,8 @@ function About() {
           target={"_blank"}
           rel={"noopener noreferrer"}
         >
-          <img
-            className={"w-[33px] h-[33px]"}
-            src={isHoverTelegram ? TelegramImgHover : TelegramImg}
-            onMouseEnter={() => setIsHoverTelegram(true)}
-            onMouseLeave={() => setIsHoverTelegram(false)}
-            alt={"telegram link"}
+          <BsTelegram
+            className={"text-black hover:text-[#ee1f80] w-[28px] h-[28px] transition-colors duration-500"}
             title={"telegram link"}
           />
         </a>
