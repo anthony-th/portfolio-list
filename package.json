@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && npx gh-pages -d dist -e ./"
   },
   "dependencies": {
     "framer-motion": "^8.2.4",
