@@ -21,7 +21,7 @@ function PortfolioItem({
   return (
     <motion.div
       className={
-        "w-fit group border border-white rounded-md overflow-hidden relative hover:border-stone-300"
+        "w-fit group border border-white rounded-md overflow-hidden relative hover:border-stone-300 hover:border-transparent"
       }
       variants={cardsItem}
     >
