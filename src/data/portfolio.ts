@@ -1,5 +1,19 @@
 export default [
   {
+    title: "Coffee House",
+    imgUrl: "./images/1.webp",
+    stack: ["JavaScript", "Webpack", "Sass"],
+    projectUrl: "https://github.com/anthony-th/coffee-house/tree/coffee-house-week3",
+    deployUrl: "https://anthony-th.github.io/coffee-house/",
+  },
+  {
+    title: "Hangman game",
+    imgUrl: "./images/9.webp",
+    stack: ["JavaScript", "Webpack", "Sass"],
+    projectUrl: "https://github.com/anthony-th/hangman/tree/develop",
+    deployUrl: "https://anthony-th.github.io/hangman/",
+  },
+  {
     title: "Sports landing",
     imgUrl: "./images/14.webp",
     stack: ["TypeScript", "React", "Tailwind"],
