@@ -18,8 +18,6 @@ function PortfolioItem({
   const onIconLeave = () => setIconHover(false);
   const onViewHover = () => setViewHover(true);
   const onViewLeave = () => setViewHover(false);
-  let iconStyle = { fontSize: "4.5em", transition: "0.3s" };
-  let isHovericonStyle = { fontSize: "4.5em", color: "#02c6de", transition: "0.3s" }; 
 
   return (
     <motion.div
@@ -69,7 +67,13 @@ function PortfolioItem({
             onMouseEnter={onIconHover}
             onMouseLeave={onIconLeave}
           >
-            <HiOutlineCode style={iconHover ? isHovericonStyle : iconStyle} />
+            <HiOutlineCode 
+              style={{
+                fontSize: "4.5em",
+                transition: "0.3s",
+                color: iconHover ? "#02c6de" : undefined,
+              }}
+            />
           </a>
           {deployUrl && (
             <a
