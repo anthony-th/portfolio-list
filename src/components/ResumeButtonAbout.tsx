@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
 import { handleClick } from "../shared/types";
 

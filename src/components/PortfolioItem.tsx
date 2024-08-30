@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { HiOutlineCode } from 'react-icons/hi';
 import { cardsItem } from "../shared/types";
 import { PortfolioItemProps } from "../shared/types";
-import { HiOutlineCode } from 'react-icons/hi';
 
 function PortfolioItem({
   imgUrl,

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { textFadeIn } from "../shared/types";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { FiDownload } from "react-icons/fi";
+import { textFadeIn } from "../shared/types";
 
 const setActive = ({ isActive }: { isActive: boolean }) =>
   isActive

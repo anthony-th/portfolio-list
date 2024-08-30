@@ -1,4 +1,3 @@
-import React from "react";
 import { handleClick } from "../shared/types";
 
 function ResumeButton() {
