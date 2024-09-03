@@ -1,5 +1,19 @@
 export default [
   {
+    title: "Coffee House",
+    imgUrl: "./images/1.webp",
+    stack: ["JavaScript", "Webpack", "Sass"],
+    projectUrl: "https://github.com/anthony-th/coffee-house/tree/coffee-house-week3",
+    deployUrl: "https://anthony-th.github.io/coffee-house/",
+  },
+  {
+    title: "Hangman game",
+    imgUrl: "./images/9.webp",
+    stack: ["JavaScript", "Webpack", "Sass"],
+    projectUrl: "https://github.com/anthony-th/hangman/tree/develop",
+    deployUrl: "https://anthony-th.github.io/hangman/",
+  },
+  {
     title: "Sports landing",
     imgUrl: "./images/14.webp",
     stack: ["TypeScript", "React", "Tailwind"],
@@ -7,25 +21,11 @@ export default [
     deployUrl: "https://sports-th.vercel.app/",
   },
   {
-    title: "Book-shop",
+    title: "Weather app",
     imgUrl: "./images/11.webp",
-    stack: ["SCSS", "JavaScript"],
-    projectUrl: "https://github.com/anthony-th/book-shop/tree/book-shop",
-    deployUrl: "https://anthony-th.github.io/book-shop/",
-  },
-  {
-    title: "Online-zoo",
-    imgUrl: "./images/9.webp",
-    stack: ["HTML", "SCSS", "JavaScript"],
-    projectUrl: "https://github.com/anthony-th/online-zoo",
-    deployUrl: "https://anthony-th.github.io/online-zoo/",
-  },
-  {
-    title: "Weather",
-    imgUrl: "./images/15.webp",
-    stack: ["React", "Tailwind", "Rest API"],
+    stack: ["React", "JavaScript", "Vite"],
     projectUrl: "https://github.com/anthony-th/weather-app/tree/develop",
-    deployUrl: "https://anthony-th.github.io/weather-app/",
+    deployUrl: "",
   },
   {
     title: "Online store",
@@ -71,13 +71,6 @@ export default [
     deployUrl: "https://anthony-th.github.io/memory-game/",
   },
   {
-    title: "Portfolio",
-    imgUrl: "./images/1.webp",
-    stack: ["HTML", "CSS", "JavaScript"],
-    projectUrl: "https://github.com/anthony-th/portfolio/tree/portfolio",
-    deployUrl: "https://anthony-th.github.io/portfolio/",
-  },
-  {
     title: "Random jokes",
     imgUrl: "./images/3.webp",
     stack: ["HTML", "CSS", "JavaScript"],
@@ -92,7 +85,7 @@ export default [
     deployUrl: "https://anthony-th.github.io/eco-sounds/",
   },
   {
-    title: "CV",
+    title: "Simple CV#2",
     imgUrl: "./images/12.webp",
     stack: ["HTML", "CSS", "JavaScript"],
     projectUrl: "https://github.com/anthony-th/cv/tree/develop",

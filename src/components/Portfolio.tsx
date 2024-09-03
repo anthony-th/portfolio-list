@@ -1,14 +1,27 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import portfolio from "../data/portfolio";
 import PortfolioItem from "./PortfolioItem";
 import { cardsContainer, cardsItem } from "../shared/types";
 
 function Portfolio() {
-  const itemsPerPage = 9;
+  const [itemsPerPage, setItemsPerPage] = useState(9);
   const [currentPage, setCurrentPage] = useState(
     parseInt(localStorage.getItem("activePage")!) || 1
   );
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1023) {
+        setItemsPerPage(8);
+      } else {
+        setItemsPerPage(9);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const totalPages = Math.ceil(portfolio.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;

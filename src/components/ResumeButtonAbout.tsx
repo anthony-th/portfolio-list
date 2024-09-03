@@ -1,11 +1,10 @@
-import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
 import { handleClick } from "../shared/types";
 
 function ResumeButtonAbout() {
   return (
     <a
-      href={"https://drive.google.com/file/d/1WkM_TYCnzl7AHm-vGC9xdZPvZefjAoaU/view"}
+      href={""}
       className={
         "font-yesteryear bg-transparent text-2xl py-0 px-2 group transition-colors duration-500 rounded border min-w-[116px] min-h-[36px] pt-[0.07em] relative bottom-3 border-t-0 cursor-not-allowed opacity-50"
       }

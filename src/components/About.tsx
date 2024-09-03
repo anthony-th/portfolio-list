@@ -1,8 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { cardsContainer, cardsItem } from "../shared/types";
 import { MdSend } from "react-icons/md";
 import { BsTelegram, BsGithub } from "react-icons/bs";
+import { cardsContainer, cardsItem } from "../shared/types";
 import ResumeButtonAbout from "./ResumeButtonAbout";
 
 function About() {

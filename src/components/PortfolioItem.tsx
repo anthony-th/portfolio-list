@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { HiOutlineCode } from 'react-icons/hi';
 import { cardsItem } from "../shared/types";
 import { PortfolioItemProps } from "../shared/types";
-import { HiOutlineCode } from 'react-icons/hi';
 
 function PortfolioItem({
   imgUrl,
@@ -12,16 +12,17 @@ function PortfolioItem({
   projectUrl,
 }: PortfolioItemProps) {
   const [loading, setLoading] = useState(true);
-  const [hover, setHover] = useState(false);
-  const onHover = () => setHover(true);
-  const onLeave = () => setHover(false);
-  let iconStyle = { fontSize: "4.5em", transition: "0.3s" };
-  let isHovericonStyle = { fontSize: "4.5em", color: "#02c6de", transition: "0.3s" }; 
+  const [iconHover, setIconHover] = useState(false);
+  const [viewHover, setViewHover] = useState(false);
+  const onIconHover = () => setIconHover(true);
+  const onIconLeave = () => setIconHover(false);
+  const onViewHover = () => setViewHover(true);
+  const onViewLeave = () => setViewHover(false);
 
   return (
     <motion.div
       className={
-        "w-fit group border border-white rounded-md overflow-hidden relative hover:border-stone-300"
+        "w-fit group border border-white rounded-md overflow-hidden relative hover:border-stone-300 hover:border-transparent"
       }
       variants={cardsItem}
     >
@@ -63,22 +64,32 @@ function PortfolioItem({
             aria-label={projectUrl}
             target={"_blank"}
             rel={"noopener noreferrer"}
-            onMouseEnter={onHover}
-            onMouseLeave={onLeave}
+            onMouseEnter={onIconHover}
+            onMouseLeave={onIconLeave}
           >
-            { hover ? <HiOutlineCode style={isHovericonStyle} /> : <HiOutlineCode style={iconStyle} /> }
+            <HiOutlineCode 
+              style={{
+                fontSize: "4.5em",
+                transition: "0.3s",
+                color: iconHover ? "#02c6de" : undefined,
+              }}
+            />
           </a>
-          <a
-            href={deployUrl}
-            className={
-              "px-3 py-1 hover:bg-white hover:outline hover:outline-1 hover:outline-red-500 hover:text-red-500 uppercase bg-red-500 rounded-md z-20 hover:shadow-lg hover:cursor-pointer duration-300 font-medium"
-            }
-            aria-label={deployUrl}
-            target={"_blank"}
-            rel={"noopener noreferrer"}
-          >
-            view
-          </a>
+          {deployUrl && (
+            <a
+              href={deployUrl}
+              className={
+                "px-3 py-1 hover:bg-white hover:outline hover:outline-1 hover:outline-red-500 hover:text-red-500 uppercase bg-red-500 rounded-md z-20 hover:shadow-lg hover:cursor-pointer duration-300 font-medium"
+              }
+              aria-label={deployUrl}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+              onMouseEnter={onViewHover}
+              onMouseLeave={onViewLeave}
+            >
+              view
+            </a>
+          )}
         </div>
         <div className={"w-full p-3 pt-1 absolute bottom-0"}>
           <h2
@@ -106,24 +117,26 @@ function PortfolioItem({
           </p>
         </div>
       </div>
-      <div className={"gap-1 w-full absolute -top-4 group-hover:top-0 group-hover:opacity-75 opacity-0 text-sm font-light flex justify-center select-none duration-500"}>
+      <div className={"gap-1 w-full absolute -top-4 group-hover:top-0 group-hover:opacity-75 opacity-0 text-base font-light flex justify-center select-none duration-500"}>
         <h2
           className={
-            "border-b-2 border-[#02c6de]"
+            `border-b-2 border-[#02c6de] transition duration-300 ${iconHover ? 'text-[#02c6de]' : '' }`
           }
         >
           source code
         </h2>
-        <h2>
-          and
-        </h2>
-        <h2
-          className={
-            "border-b-2 border-red-500"
-          }
-        >
-          deploy
-        </h2>
+        {deployUrl && (
+          <>
+            <h2>
+              and
+            </h2>
+            <h2
+              className={`border-b-2 border-red-500 transition duration-300 ${viewHover ? 'text-red-500' : '' }`}
+            >
+              deploy
+            </h2>
+          </>
+        )}
       </div>
     </motion.div>
   );
