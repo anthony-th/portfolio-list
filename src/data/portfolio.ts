@@ -18,7 +18,7 @@ export default [
     imgUrl: "./images/14.webp",
     stack: ["TypeScript", "React", "Tailwind"],
     projectUrl: "https://github.com/anthony-th/sports/tree/develop",
-    deployUrl: "https://sports-th.vercel.app/",
+    deployUrl: "https://anthony-th.github.io/sports/",
   },
   {
     title: "Weather app",
